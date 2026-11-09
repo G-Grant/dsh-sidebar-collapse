@@ -1,6 +1,6 @@
 {
   "name": "dsh-sidebar-collapse",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DeepSeek Harness 插件：独立折叠侧边栏功能入口栏，为工作区腾出空间。",
   "keywords": [
     "dsh",
