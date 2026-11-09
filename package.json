@@ -1,0 +1,34 @@
+{
+  "name": "dsh-sidebar-collapse",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：独立折叠侧边栏功能入口栏，为工作区腾出空间。",
+  "license": "MIT",
+  "author": "G-Grant",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "icon.svg", "README.md", "LICENSE"],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=0.2.1-rc.2"
+  },
+  "engines": { "node": ">=22", "dsh": ">=0.2.1-rc.2" },
+  "packageManager": "pnpm@11.8.0"
+}
