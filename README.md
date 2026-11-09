@@ -20,4 +20,4 @@ pnpm build
 
 ## 发布
 
-在 `master` 分支更新 `package.json` 的 `version` 并提交后，GitHub Actions 会运行检查、创建对应的 GitHub Release，并上传插件 tarball。预发布版本（例如 `0.2.0-beta.1`）会自动标记为 prerelease。
+在 `main` 分支更新 `package.json` 的 `version` 并提交后，GitHub Actions 会运行检查、创建对应的 GitHub Release，并上传插件 tarball。预发布版本（例如 `0.2.0-beta.1`）会自动标记为 prerelease。
